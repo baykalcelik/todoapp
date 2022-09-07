@@ -1,0 +1,15 @@
+.compBtnCover{
+    cursor: pointer;
+}
+
+.itscompleted{
+    color:green;
+    font-size: 1.25rem;
+
+}
+
+.itsworking{
+    color:darkorange;
+    font-size: 1.25rem;
+
+}

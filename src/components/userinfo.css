@@ -1,0 +1,19 @@
+.userinfoCover{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:0.2rem;
+    cursor: pointer;
+
+}
+
+.username{
+    font-size:0.8rem;
+    user-select: none;
+}
+
+.usericon{
+    font-size:1.2rem;
+    
+}

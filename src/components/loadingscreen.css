@@ -1,0 +1,46 @@
+.loadingscreenCover{
+    width:100%;
+    height:100vh;
+    background-color: rgba(0,0,0,0.5);
+    position:absolute;
+    left:0px;
+    top:0px;
+    z-index: 3;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.loadingSpinner{
+    width:100px;
+    height:100px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 10px solid transparent;
+    border-top-color:red;
+    animation-name: spinner;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction:normal;
+
+}
+
+@keyframes spinner{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}
+
+.lsheader{
+    color:white;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}

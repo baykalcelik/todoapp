@@ -1,0 +1,16 @@
+.progressBarCover{
+    width:100%;
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.pbBackground{
+    width: 100%;
+    height: 0.5rem;
+    background: rgb(242,4,4);
+    background: linear-gradient(90deg, rgba(242,4,4,1) 0%, rgba(255,244,0,1) 100%); 
+    border-radius: 100vh;
+
+}
+

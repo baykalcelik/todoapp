@@ -1,0 +1,96 @@
+.todoitemCover{
+    display: flex;
+    justify-content: space-between;
+    width:99%;
+
+    padding: 0.8rem 0.5rem;
+    border-radius: 5px;
+    margin-right: 3px;
+    position:relative;
+}
+
+.itemdark{
+    background-color: rgba(255,255,255, 0.15);
+}
+
+.itemlight{
+    background-color: rgba(255,255,255, 0.5);
+}
+
+/* .todoitemCover:hover .editArea{
+    margin-left: 0px;
+} */
+
+
+.todoitemLeftSide{
+    display: flex;
+    gap:0.5rem;
+
+}
+
+.todoitemRightSide{
+    display: flex;
+    gap:0.5rem;
+    
+}
+
+.editArea{
+
+    
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap:0.5rem;
+    padding: 0.5rem;
+
+    position:absolute;
+    z-index:1;
+    left:0px;
+    top:0px;
+
+    width:100%;
+    height:100%;
+    margin-left: -100%;
+    border-radius: 5px;
+    background-color: rgb(38, 36, 104);
+    /* background-color: rgb(2, 1, 41); */
+    transition:all 0.5s;
+}
+
+.editAreaShow{
+    /* display: block; */
+    margin-left: 0px;
+}
+
+
+.editAreainput{
+    height: 100%;
+    display: block;
+    width:80%;
+    background-color: rgb(212, 212, 245);
+    color: black;
+    font-size: 1rem;
+    padding-left: 0.5rem;
+    border-radius: 5px;
+
+
+}
+
+
+.saveedit{
+    border-radius: 50%;
+    background-color: green;
+    /* padding: 0.5rem; */
+    color:white;
+    font-size: 1.5rem;
+}
+
+
+.cancelled{
+    border-radius: 50%;
+    background-color: rgb(143, 5, 5);
+    /* padding: 0.5rem; */
+    color:white;
+    font-size: 1.5rem;
+}
+
