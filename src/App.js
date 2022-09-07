@@ -76,7 +76,8 @@ function reducer(state, action){
 
 
   if(action.type === "changeDarkMode"){
-    state.darkmodeValue = !state.darkmodeValue;
+    state.darkmodeValue = action.data;
+    
     return {...state};
   }
 
@@ -185,6 +186,12 @@ function reducer(state, action){
 
 
   useEffect(()=>{
+    let dmdurum = localStorage.getItem("todoDarkmodevalue") === "false" ? false : true;
+    // console.log("açılışta localstoragedan gelen darmode değeri : ", dmdurum );
+    // console.log("açılışta darkmodevalue değeri : ", veri.darkmodeValue);
+    dispatch({type:"changeDarkMode", data:dmdurum  });
+    // console.log("açılışta dispatchden sonra darkmode değeri : ", veri.darkmodeValue);
+
     gettododata();
 
   },[]);
